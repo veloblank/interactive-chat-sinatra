@@ -20,7 +20,11 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/login' do
-
+    if params[:username] == "" || params[:password] == ""
+      erb :failure
+    else
+      "Success"
+    end
   end
 
 end

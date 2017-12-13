@@ -1,0 +1,13 @@
+<% if params[:username] && params[:password] == "" %>
+    <h3 style="color: red">You must enter a username and password.</h3>
+    <a href="/login">back</a>
+<% elsif params[:username] == "" %>
+    <h3 style="color: red">You must enter a username.</h3>.
+    <a href="/login">back</a>
+<% elsif params[:password] == "" %>
+    <h3 style="color: red">You must enter a password.</h3>
+    <a href="/login">back</a>
+<% else %>
+  <h3>Username not found. Please create an account.</h3>
+  <a href="/signup">Sign Up</a>
+<% end %>
