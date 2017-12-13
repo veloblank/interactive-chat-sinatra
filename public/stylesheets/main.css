@@ -13,7 +13,7 @@
 
   /* --- Welcome Page Styles --- */
   body {
-    background-color: lightblue;
+    background-color: blue;
     color: #333;
     font-family: Sans-Serif;
     line-height: 18px;
@@ -76,6 +76,9 @@
     clear: both;
   }
 
+  .input-box {
+    width: 200px;
+  }
   footer.branding {
     border-top: 2px solid #ccc;
     margin-top: 20px;

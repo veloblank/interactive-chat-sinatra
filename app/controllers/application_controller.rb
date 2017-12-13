@@ -19,4 +19,8 @@ class ApplicationController < Sinatra::Base
     erb :login
   end
 
+  post '/login' do
+
+  end
+
 end
